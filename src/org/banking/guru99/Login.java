@@ -15,8 +15,8 @@ public class Login {
 	public static void main(String[] args) throws IOException {
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\user\\eclipse-workspace\\BankingProjectGuru99\\driver\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
-		driver.manage().window().maximize();
-		driver.get("https://www.demo.guru99.com/V4/");
+		//driver.manage().window().maximize();
+		//driver.get("https://www.demo.guru99.com/V4/");
 		WebElement txtUserName = driver.findElement(By.xpath("//input[@name='uid']"));
 		txtUserName.sendKeys("mngr430259");
 		WebElement txtPassword = driver.findElement(By.xpath("//input[@name='password']"));
